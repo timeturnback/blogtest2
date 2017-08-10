@@ -1,0 +1,18 @@
+<h1>Listing articles</h1>
+ 
+<%= link_to 'New article', new_student_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @student.each do |student| %>
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.class_name %></td>
+      <td><%= link_to 'Show', student_path(student) %></td>
+    </tr>
+  <% end %>
+</table>

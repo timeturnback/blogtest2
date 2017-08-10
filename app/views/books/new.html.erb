@@ -1,0 +1,20 @@
+<%= form_for :book, url: '/books/create' do |f| %>
+  <p>
+    <%= f.label :"Nhap tua de" %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :"Nhap tom tat :" %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.label :"So luong sach :" %><br>
+    <%= f.text_area :numberofbooks %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
