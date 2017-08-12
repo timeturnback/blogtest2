@@ -7,5 +7,14 @@
   <strong>Text:</strong>
   <%= @student.class_name %>
 </p>
+
+
+<h2>Reviews</h2>
+<%= render @student.reviews %>
+
+
+<h2>Add a review:</h2>
+<%= render 'reviews/form' %>
  
+<%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>

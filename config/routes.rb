@@ -12,7 +12,9 @@ Rails.application.routes.draw do
   delete 'posts/:id' , to: 'posts#destroy'
 
 
-  resources :students
+  resources :students do
+  	resources :reviews
+  end
 
   # get 'test1/testoutput'
   get 'test1/testoutput'
